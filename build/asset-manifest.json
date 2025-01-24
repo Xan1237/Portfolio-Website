@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1ddf5c9.css",
+    "main.js": "/static/js/main.383f0416.js",
+    "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
+    "static/media/logo-xs.png": "/static/media/logo-xs.b2752aa5f7142df697ac.png",
+    "static/media/woopiebounce.png": "/static/media/woopiebounce.02214faa4eba76c43ff8.png",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/rubiks.jpg": "/static/media/rubiks.1b5bb2bfccebe9e26da8.jpg",
+    "static/media/baseballFeild.jpg": "/static/media/baseballFeild.c9f6de3056a1f2afa052.jpg",
+    "static/media/logo_sub.png": "/static/media/logo_sub.19f3ab25ab15fd848b30.png",
+    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/json.jpg": "/static/media/json.cbe8afb0cf9810c4d170.jpg",
+    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/index.html",
+    "main.c1ddf5c9.css.map": "/static/css/main.c1ddf5c9.css.map",
+    "main.383f0416.js.map": "/static/js/main.383f0416.js.map",
+    "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1ddf5c9.css",
+    "static/js/main.383f0416.js"
+  ]
+}

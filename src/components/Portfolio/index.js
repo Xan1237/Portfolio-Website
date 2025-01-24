@@ -23,6 +23,7 @@ const Projects = () => {
       id: 2,
       title: "Json Parser",
       img: json,
+      link: "https://personalwebsite-f3ql.onrender.com/json.html",
       description: "Json File Validator",
       technologies: ["Python", "NodeJS", "Regex"],
     },
@@ -30,6 +31,7 @@ const Projects = () => {
       id: 3,
       title: "Rubiks Cube Time",
       img: cube,
+      link: "https://personalwebsite-f3ql.onrender.com/cube.html",
       description: "Inspired By my Love of Rubiks Cubes",
       technologies: ["JavaScript", "NodeJS"],
     },
@@ -72,7 +74,7 @@ const Projects = () => {
           <div key={project.id} className="projects__card">
             <div className="projects__card-content">
               <h3 className="projects__card-title">{project.title}</h3>
-              <a href= {project.link}><img src={project.img} alt={project.title} /> </a>
+              <a href= {project.link} target="_blank" rel="noreferrer"><img src={project.img} alt={project.title} /> </a>
               <p className="projects__card-description">{project.description}</p>
               <div className="projects__tech-list">
                 {project.technologies.map((tech) => (
