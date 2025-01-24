@@ -1,0 +1,133 @@
+.big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .contact-info {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 40vw; /* Default width for large screens */
+    max-width: 600px; /* Prevent it from growing too large on very big screens */
+    min-width: 300px; /* Prevent it from shrinking too small on small screens */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards; /* Add fade-in effect for contact-info */
+  
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+  
+    .contact-card {
+      margin-bottom: 2rem;
+      animation: slideUp 1s ease-out;
+  
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+        font-size: 3rem;
+        opacity: 0;
+        animation: fadeIn 0.8s ease-in-out forwards;
+        
+        .icon {
+          margin-right: 1rem;
+          color: #1a73e8;
+          font-size: 1.5rem;
+        }
+  
+        p {
+          margin: 0;
+          color: #555;
+        }
+      }
+    }
+  
+    .social-media {
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #444;
+      }
+  
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+  
+        a {
+          font-size: 1.8rem;
+          color: #555;
+          transition: color 0.3s, transform 0.3s;
+          
+          &:hover {
+            color: #1a73e8;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Media queries for responsive behavior */
+  @media screen and (max-width: 1200px) {
+    .contact-info {
+      width: 60vw; /* Slightly wider for medium-sized screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-info {
+      width: 80vw; /* For tablet-sized screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-info {
+      width: 90vw; /* For small mobile devices */
+      padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+  
+    h1 {
+      font-size: 2rem; /* Adjust font size for mobile */
+    }
+  
+    .social-media h2 {
+      font-size: 1.5rem;
+    }
+  
+    .social-icons a {
+      font-size: 1.5rem; /* Slightly smaller icons on mobile */
+    }
+  }
+  
