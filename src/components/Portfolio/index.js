@@ -24,7 +24,7 @@ const Projects = () => {
       title: "Json Parser",
       img: json,
       link: "https://personalwebsite-f3ql.onrender.com/json.html",
-      description: "Json File Validator",
+      description: "json file validator built with pyhton",
       technologies: ["Python", "NodeJS", "Regex"],
     },
     {
