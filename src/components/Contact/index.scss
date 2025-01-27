@@ -7,7 +7,7 @@
     animation: fadeIn 1s ease-in-out;
   }
   
-  .contact-info {
+  .contact-info { // Fit card within viewport
     margin: 0 auto;
     padding: 2rem;
     background-color: #ffffff;
@@ -27,6 +27,7 @@
     }
   
     .contact-card {
+      
       margin-bottom: 2rem;
       animation: slideUp 1s ease-out;
   
@@ -114,6 +115,16 @@
   
   @media screen and (max-width: 480px) {
     .contact-info {
+      h1{
+        font-size: 30px;
+      }
+      .contact-card{
+        .contact-item{
+          color: black;
+          
+          font-size: 20px;
+        }
+      }
       width: 60vw; /* For small mobile devices */
       padding: 1.5rem; /* Reduce padding for smaller screens */
     }
