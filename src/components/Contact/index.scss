@@ -111,10 +111,15 @@
     .contact-info {
       width: 80vw; /* For tablet-sized screens */
     }
+    .big{
+      align-items: flex-start;
+      margin-top: 20px;
+    }
   }
   
   @media screen and (max-width: 480px) {
     .contact-info {
+      color: aqua;
       h1{
         font-size: 30px;
       }
