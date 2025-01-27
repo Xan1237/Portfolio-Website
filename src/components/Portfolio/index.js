@@ -68,7 +68,6 @@ const Projects = () => {
     <section className="projects__container">
       <Sidebar />
       <h1 class='title'>Projects</h1>
-      <h2 className="projects__title">Projects</h2>
       <div className="projects__grid" ref={gridRef} onScroll={handleScroll}>
         {projects.map((project) => (
           <div key={project.id} className="projects__card">
