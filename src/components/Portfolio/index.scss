@@ -50,6 +50,7 @@ $tech-text: #000000;
         padding: 1rem;
   
         & > .projects__card {
+          height: 50vh;
           flex: 0 0 calc(100% - 1rem); // Fit card within viewport
           margin-right: 1rem;
           scroll-snap-align: center; // Snap each card to center

@@ -68,6 +68,17 @@ const Projects = () => {
     <section className="projects__container">
       <Sidebar />
       <h1 class='title'>Projects</h1>
+      <div className="projects__bubbles">
+        {projects.map((_, index) => (
+          <div
+            key={index}
+            className={`projects__bubbles-bubble ${
+              activeIndex === index ? "active" : ""
+            }`}
+            onClick={() => scrollToCard(index)}
+          ></div>
+        ))}
+      </div>
       <div className="projects__grid" ref={gridRef} onScroll={handleScroll}>
         {projects.map((project) => (
           <div key={project.id} className="projects__card">
@@ -88,17 +99,7 @@ const Projects = () => {
       </div>
 
       {/* Navigation Bubbles */}
-      <div className="projects__bubbles">
-        {projects.map((_, index) => (
-          <div
-            key={index}
-            className={`projects__bubbles-bubble ${
-              activeIndex === index ? "active" : ""
-            }`}
-            onClick={() => scrollToCard(index)}
-          ></div>
-        ))}
-      </div>
+
     </section>
   );
 };
