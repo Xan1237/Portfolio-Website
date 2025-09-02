@@ -28,7 +28,7 @@ const Projects = () => {
       img: SpaceStyler,
       link: "https://youtu.be/XXmj8QDrFbk?si=aHc7y7xtznlfxdqi&t=52",
       description: "A marketplace allowing realtors to create 360° immersive experiences of their properties, and allowing renters to style them to match their needs.",
-      technologies: ["AWS", "Python"],
+      technologies: ["AWS", "Python", "Gen AI"],
     },
      {
       id: 6,
