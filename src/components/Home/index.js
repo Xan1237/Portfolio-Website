@@ -1,6 +1,7 @@
 import LogoTitle from '../../assets/images/logo-xs.png';
 import {Link} from 'react-router-dom'
 import './index.scss'
+import Sidebar from '../Sidebar/'
 import { useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 const Home = () => {
@@ -8,6 +9,8 @@ const Home = () => {
     const nameArray = ['a', 'n', 'd', 'e', 'r']
     const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
     return (
+        <>
+        <Sidebar />
         <div className="container home-page">
             <div className="text-zone">
                 <h1> 
@@ -23,6 +26,6 @@ const Home = () => {
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
         </div>
-    )
+    </>)
 }
 export default Home;

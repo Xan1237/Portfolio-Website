@@ -23,10 +23,18 @@ $tech-text: #000000;
     margin-top: 30px;
 }
 
+// Allow vertical scrolling for the Portfolio section
+// Allow vertical scrolling for the Portfolio section
+// Allow vertical scrolling for the Portfolio section
 .projects__container {
-    padding: 2rem;
-    text-align: center;
-    margin-bottom: 30px;
+  padding: 2rem 2rem 5rem 2rem; // Increase bottom padding
+  text-align: center;
+  margin-bottom: 30px;
+  // Remove max-height and overflow-y to let the container grow naturally
+// Add extra margin to the last project card for visibility
+.projects__card:last-child {
+  margin-bottom: 3rem;
+}
   
     .projects__title {
       font-size: 2.5rem;
@@ -50,7 +58,7 @@ $tech-text: #000000;
         padding: 1rem;
   
         & > .projects__card {
-          height: 50vh;
+          height: 60vh;
           flex: 0 0 calc(100% - 1rem); // Fit card within viewport
           margin-right: 1rem;
           scroll-snap-align: center; // Snap each card to center
@@ -97,6 +105,7 @@ $tech-text: #000000;
           color: $text-light;
           text-align: center;
           margin-bottom: 1rem;
+          font-size: 1.5rem;
         }
   
         .projects__tech-list {
@@ -110,7 +119,7 @@ $tech-text: #000000;
             color: $tech-text;
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
-            font-size: 0.875rem;
+            font-size: 1.2rem;
             font-weight: 500;
           }
         }

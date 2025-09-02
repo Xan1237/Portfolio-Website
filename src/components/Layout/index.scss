@@ -1,20 +1,26 @@
+// Let .page grow with content and allow body to scroll
 .page{
     width: 100vw;
-    height: 100vh;
-    position: absolute;
-    overflow-y: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+    position: relative;
 }
 
 .top-tags{
     bottom: auto;
     top: 35px;
 }
+// Ensure the html and body allow scrolling
+html, body {
+    height: 100%;
+    overflow-y: auto;
+}
 
-.tags{
-    color: #ffd700;
-    opacity: 0.6;
-    position: absolute;
-    bottom: 0;
+// Let .page grow with content and not force horizontal scroll
+.page{
+        min-height: 100vh;
+        overflow-y: visible;
+        position: relative;
     left: 120px;
     font-size: 18px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;

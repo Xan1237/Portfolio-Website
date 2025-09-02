@@ -9,14 +9,12 @@ function App() {
   return (
     <Routes>
       {/* Routes with Layout */}
-      <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-      </Route>
 
       {/* Routes without Layout */}
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
-    </Routes>
+      </Routes>
   );
 }
 

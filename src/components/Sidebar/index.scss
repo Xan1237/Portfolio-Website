@@ -1,3 +1,42 @@
+.bottom-nav {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 60px;
+    background: #181818;
+    z-index: 100;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+    border-top: 1px solid #222;
+  }
+  .bottom-nav a {
+    color: #4d4d4e;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 33vw;
+    height: 100%;
+    transition: color 0.2s;
+  }
+  .bottom-nav a.active {
+    color: #ffd700;
+  }
+  .nav-bar {
+    display: none;
+  }
+}
+
 .nav-bar {
   background: #181818;
   width: 60px;
@@ -8,7 +47,6 @@
   z-index: 3;
   min-height: 500px;
   transition: all 0.3s ease-out;
-
   ul{
     li{
       height: auto;
@@ -81,34 +119,7 @@ a.portfolio-link {
     }
   }
 
-  @media screen and (max-width: 1200px) {
-    width: auto;
-    height: 60px;
-    position: relative;
-    min-height: auto;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-
-
-    li{
-      width: 10px;
-      text-align: center;
-      .social{
-       width: 25px;
-       height: auto;
-       display: block;
-      }
-    }
-
-  }
-
-  @media screen and (max-width: 600px) {
-    padding: 0 10px;
-    justify-content: center;
-  }
+  // Removed conflicting @media rules for .nav-bar (handled by .bottom-nav)
 
   .logo {
     display: block;
