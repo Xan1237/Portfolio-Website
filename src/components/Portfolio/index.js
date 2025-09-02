@@ -20,7 +20,7 @@ const Projects = () => {
       img: fitcheck,
       link: "https://fitcheck.fitness",
       description: "A Social media platform allowing gym enthusiasts to connect and share their fitness journeys. As well as rate diffrent gyms and find fitness services",
-      technologies: ["NodeJS", "React"],
+      technologies: ["NodeJS", "React", "Supabase"],
     },
     {
       id: 6,
