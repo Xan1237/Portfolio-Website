@@ -34,7 +34,7 @@ const Projects = () => {
       id: 6,
       title: "Car Loan Approval Chatbot",
       img: carLoan,
-      link: "https://youtu.be/XXmj8QDrFbk?si=aHc7y7xtznlfxdqi&t=52",
+      link: "https://github.com/Xan1237/neuro-san-studio",
       description: "Used Cognizants open source neuro-ai software to create an agentic ai chatbot to determine a customers car loan eligibility.",
       technologies: ["Agentic AI", "Python"],
     },
